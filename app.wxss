@@ -1,0 +1,53 @@
+page {
+  background: #000;
+  color: #fff;
+  min-height: 100%;
+  font-family: sans-serif;
+}
+
+.card {
+  background: #efefef;
+  color: #111;
+  border-radius: 4rpx;
+}
+
+.bottom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 110rpx;
+  background: #000;
+  border-top: 1rpx solid #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 20;
+}
+
+.bottom-nav text {
+  font-size: 44rpx;
+  color: #f4f4f4;
+}
+
+.bottom-pad {
+  height: 130rpx;
+}
+
+.modal-mask {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 50;
+}
+
+.modal {
+  position: fixed;
+  left: 40rpx;
+  right: 40rpx;
+  top: 22%;
+  background: #111;
+  border: 1rpx solid #333;
+  z-index: 60;
+  padding: 32rpx;
+}

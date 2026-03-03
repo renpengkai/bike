@@ -1,0 +1,4 @@
+.home-wrap { padding: 40rpx; }
+.brand { font-size: 72rpx; font-weight: 700; margin-top: 20rpx; }
+.slogan { margin-top: 10rpx; color: #e8e8e8; line-height: 1.4; }
+.entry { height: 230rpx; margin-top: 40rpx; padding: 28rpx; font-size: 72rpx; color: #999; }

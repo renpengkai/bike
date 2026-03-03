@@ -1,0 +1,15 @@
+<view class="wrap">
+  <view class="tabs">
+    <text wx:for="{{tabs}}" wx:key="*this" class="tab {{active===item?'active':''}}" data-item="{{item}}" bindtap="switchTab">{{item}}</text>
+  </view>
+  <view wx:for="{{list}}" wx:key="index" class="msg">{{item}}</view>
+
+  <view class="bottom-pad"></view>
+  <view class="bottom-nav">
+    <text bindtap="goHome">首页</text>
+    <text bindtap="goCustomize">定制</text>
+    <text bindtap="go3d">3D</text>
+    <text>消息</text>
+    <text bindtap="goProfile">我的</text>
+  </view>
+</view>

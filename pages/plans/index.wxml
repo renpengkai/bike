@@ -1,0 +1,10 @@
+<view class="wrap">
+  <view wx:for="{{plans}}" wx:key="name" class="plan card">
+    <view>{{item.name}}</view>
+    <view>车型 {{item.bikeType}}</view>
+    <view wx:for="{{item.rows}}" wx:key="type">{{item.type}} {{item.name}}</view>
+    <view class="foot">价格总计:{{item.price}}</view>
+    <view class="foot"><text>修改</text><text data-index="{{index}}" bindtap="remove">删除</text></view>
+  </view>
+  <view wx:if="{{!plans.length}}">暂无方案，请去定制页暂存方案。</view>
+</view>

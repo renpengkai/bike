@@ -1,0 +1,81 @@
+<view class="page">
+  <view class="top-cats" wx:if="{{mode !== 'bike'}}">
+    <scroll-view scroll-x="true" class="cat-scroll">
+      <text
+        wx:for="{{categories}}"
+        wx:key="*this"
+        data-item="{{item}}"
+        class="cat {{activeCategory===item?'active':''}}"
+        bindtap="selectCategory"
+      >{{item}}</text>
+    </scroll-view>
+  </view>
+
+  <view class="content">
+    <view class="left-types">
+      <view class="type-title">车型</view>
+      <view
+        wx:for="{{bikeTypes}}"
+        wx:key="*this"
+        data-item="{{item}}"
+        class="type {{selectedType===item?'active':''}}"
+        bindtap="selectType"
+      >{{item}}</view>
+    </view>
+
+    <view class="right-products">
+      <view wx:if="{{!selectedType}}" class="tip">请先选择车型；当前展示默认推荐商品。</view>
+      <view
+        wx:for="{{displayProducts}}"
+        wx:key="id"
+        class="product card"
+        data-id="{{item.id}}"
+        bindtap="goDetail"
+      >
+        <view class="name">{{item.name}}</view>
+        <view class="desc">{{item.desc}}</view>
+        <view class="price">¥{{item.price}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="cart-area card">
+    <view class="picked-title">已选</view>
+    <view wx:for="{{selectedList}}" wx:key="type" class="picked-row">
+      <text>{{item.type}}：{{item.name}}</text>
+      <text class="replace" data-type="{{item.type}}" bindtap="handleReplace">{{mode==='single'?'删除':'替换'}}</text>
+    </view>
+    <view class="cart-btn" bindtap="toggleCart">查看购物车 价格:{{totalPrice}}</view>
+    <view class="actions">
+      <text class="action" bindtap="submitOrder">立即下单 {{totalPrice}}元</text>
+      <text class="action" wx:if="{{mode==='custom'}}" bindtap="openSave">暂存方案</text>
+    </view>
+  </view>
+
+  <view class="bottom-pad"></view>
+  <view class="bottom-nav">
+    <text bindtap="goHome">首页</text>
+    <text>定制</text>
+    <text bindtap="go3d">3D</text>
+    <text bindtap="goMessages">消息</text>
+    <text bindtap="goProfile">我的</text>
+  </view>
+
+  <view wx:if="{{showCart}}" class="modal-mask" bindtap="toggleCart"></view>
+  <view wx:if="{{showCart}}" class="modal">
+    <view>快递服务</view>
+    <view>我的地址: 陈晓杰 17736395838 北京市昌平区</view>
+    <view style="margin:24rpx 0 12rpx;">已有地址 / 新增地址</view>
+    <view wx:for="{{selectedList}}" wx:key="type">{{item.type}}：{{item.name}}</view>
+    <view style="margin-top:12rpx;">查看购物车 价格:{{totalPrice}}</view>
+  </view>
+
+  <view wx:if="{{showSave}}" class="modal-mask" bindtap="closeSave"></view>
+  <view wx:if="{{showSave}}" class="modal save-modal">
+    <view class="save-title">存入方案</view>
+    <view class="slot-row">
+      <text wx:for="{{saveSlots}}" wx:key="*this" data-slot="{{item}}" class="slot {{saveName===item?'pick':''}}" bindtap="pickSave">{{item}}</text>
+    </view>
+    <view class="save-ok" bindtap="savePlan">确定</view>
+  </view>
+</view>

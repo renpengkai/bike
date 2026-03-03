@@ -1,0 +1,25 @@
+<view class="wrap">
+  <view class="brand">AK BIKE</view>
+  <view class="user">
+    <view class="avatar card">设置头像</view>
+    <view class="name">未命名</view>
+  </view>
+
+  <view class="entry-row">
+    <text bindtap="goPlans">我的方案</text>
+    <text bindtap="goAddresses">我的地址</text>
+    <text bindtap="goOrders">订单</text>
+  </view>
+
+  <view class="big card">质保服务</view>
+  <view class="big card">联系客服</view>
+
+  <view class="bottom-pad"></view>
+  <view class="bottom-nav">
+    <text bindtap="goHome">首页</text>
+    <text bindtap="goCustomize">定制</text>
+    <text bindtap="go3d">3D</text>
+    <text bindtap="goMessages">消息</text>
+    <text>我的</text>
+  </view>
+</view>

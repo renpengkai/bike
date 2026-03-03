@@ -1,0 +1,4 @@
+.detail { padding-bottom: 120rpx; }
+.hero { height: 560rpx; margin: 10rpx; display: flex; justify-content: center; align-items: center; font-size: 180rpx; }
+.intro,.price { padding: 0 20rpx; font-size: 62rpx; }
+.bottom-action { position: fixed; left:0; right:0; bottom:0; text-align:center; background:#000; padding:24rpx; font-size:56rpx; }

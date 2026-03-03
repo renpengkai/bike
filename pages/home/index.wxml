@@ -1,0 +1,17 @@
+<view class="home-wrap">
+  <view class="brand">AK BIKE</view>
+  <view class="slogan">一个专业的组车小程序\n满足您的各种需求</view>
+
+  <view class="entry card" bindtap="goCustomize">定制</view>
+  <view class="entry card" bindtap="goSingle">单品</view>
+  <view class="entry card" bindtap="goBike">整车</view>
+
+  <view class="bottom-pad"></view>
+  <view class="bottom-nav">
+    <text>首页</text>
+    <text bindtap="goCustomize">定制</text>
+    <text bindtap="go3d">3D</text>
+    <text bindtap="goMessages">消息</text>
+    <text bindtap="goProfile">我的</text>
+  </view>
+</view>

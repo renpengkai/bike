@@ -1,0 +1,7 @@
+<view class="detail">
+  <view class="hero card">商品</view>
+  <view class="intro">商品介绍:——————————</view>
+  <view class="price">价格{{price}}</view>
+
+  <view class="bottom-action" bindtap="act">{{btnText}}</view>
+</view>

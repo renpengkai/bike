@@ -1,0 +1,26 @@
+.page { padding-top: 10rpx; }
+.top-cats { padding-left: 190rpx; }
+.cat-scroll { white-space: nowrap; }
+.cat { margin-right: 36rpx; font-size: 42rpx; }
+.active { color: #fff; font-weight: 700; }
+.content { display: flex; }
+.left-types { width: 180rpx; padding: 20rpx 10rpx 0 28rpx; }
+.type-title { font-size: 56rpx; margin-bottom: 16rpx; }
+.type { font-size: 54rpx; margin: 18rpx 0; }
+.right-products { flex: 1; background: #222; padding: 20rpx; min-height: 700rpx; }
+.tip { margin-bottom: 10rpx; color: #ddd; }
+.product { padding: 20rpx; margin-bottom: 20rpx; }
+.name { font-size: 42rpx; }
+.desc,.price { color: #333; }
+.cart-area { margin: 20rpx; padding: 20rpx; }
+.picked-title { font-size: 50rpx; margin-bottom: 8rpx; }
+.picked-row { display: flex; justify-content: space-between; color: #111; margin: 8rpx 0; }
+.replace { color: #222; text-decoration: underline; }
+.cart-btn { margin-top: 14rpx; background: #000; color: #fff; display: inline-block; padding: 10rpx 20rpx; }
+.actions { margin-top: 24rpx; display: flex; justify-content: space-around; color: #111; }
+.action { font-size: 46rpx; }
+.save-title { text-align: center; font-size: 48rpx; }
+.slot-row { display: flex; justify-content: space-around; margin-top: 32rpx; }
+.slot { padding: 10rpx 20rpx; border: 1rpx solid #555; }
+.pick { border-color: #fff; }
+.save-ok { margin-top: 40rpx; text-align: center; font-size: 48rpx; }

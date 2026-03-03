@@ -1,0 +1,4 @@
+.wrap { margin: 10rpx; padding: 20rpx; min-height: 100vh; color:#111; }
+.title { text-align:center; font-size: 62rpx; margin-bottom:20rpx; }
+.item { margin-bottom: 50rpx; font-size: 48rpx; }
+.row { display:flex; justify-content: space-between; margin-top: 18rpx; }
