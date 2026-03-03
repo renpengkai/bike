@@ -1,0 +1,7 @@
+.wrap { padding: 40rpx; }
+.brand { font-size: 72rpx; text-align: center; margin: 20rpx 0 40rpx; }
+.user { display:flex; align-items:center; }
+.avatar { width: 170rpx; height:170rpx; display:flex; justify-content:center; align-items:center; font-size:45rpx; }
+.name { margin-left: 30rpx; font-size: 48rpx; }
+.entry-row { display:flex; justify-content: space-between; margin: 40rpx 0; font-size: 56rpx; }
+.big { height: 230rpx; margin: 20rpx 80rpx; padding: 16rpx; font-size: 58rpx; }

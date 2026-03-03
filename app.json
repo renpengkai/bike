@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/customize/index",
+    "pages/product-detail/index",
+    "pages/messages/index",
+    "pages/profile/index",
+    "pages/addresses/index",
+    "pages/orders/index",
+    "pages/plans/index",
+    "pages/placeholder3d/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "AK BIKE",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#000000"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,5 @@
+.wrap { padding: 40rpx; }
+.tabs { display:flex; justify-content: space-between; margin-bottom: 20rpx; }
+.tab { font-size: 38rpx; color: #aaa; }
+.active { color:#fff; font-weight:700; }
+.msg { margin: 30rpx 0; font-size: 46rpx; }

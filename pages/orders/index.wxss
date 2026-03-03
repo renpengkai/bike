@@ -1,0 +1,2 @@
+.wrap { padding: 20rpx; }
+.order { padding: 20rpx; margin-bottom: 20rpx; font-size: 42rpx; color:#111; }
